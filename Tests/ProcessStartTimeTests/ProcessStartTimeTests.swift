@@ -17,8 +17,4 @@ final class ProcessStartTimeTests: XCTestCase {
         let uptime = info.uptime
         XCTAssertEqual(uptime, Date().timeIntervalSince1970 - c, accuracy: 0.1, "")
     }
-
-    static var allTests = [
-        ("testStartTime", testStartTime),
-    ]
 }
